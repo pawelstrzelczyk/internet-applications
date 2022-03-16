@@ -1,0 +1,11 @@
+li { list-style-type: square }
+span#cena { color: red; font-weight: bold }
+.wstęp { font-style: italic }
+td > img { border-style: solid; border-color: blue }
+td > img:hover {border-style: solid; border-color: red}
+h1 + h2 { letter-spacing: 5px }
+td[colspan="2"] { font-size: small }
+p ~ p {color: grey}
+h1 { color: blue }
+h1 { color: green } /*-- ten drugi*/
+body { background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/2._Mestre_%28Italy%29%2C_the_dog_MILO.jpg/120px-2._Mestre_%28Italy%29%2C_the_dog_MILO.jpg); background-repeat: repeat-y }
