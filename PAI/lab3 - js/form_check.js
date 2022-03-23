@@ -1,10 +1,10 @@
 
 function cnt(form, msg, maxSize) {
     if (form.value.length > maxSize)
-    form.value = form.value.substring(0, maxSize);
+        form.value = form.value.substring(0, maxSize);
     else
-    msg.innerHTML = maxSize - form.value.length;
-   }
+        msg.innerHTML = maxSize - form.value.length;
+}
 
 function alterRows(i, e) {
     if (e) {
