@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="pl">
 
 <head>
     <meta charset="utf-8" />
@@ -24,7 +24,7 @@
                     $('#toggle').toggleClass('zielona');
                 });
                 $('tr:even').addClass('zielona');
-                $('.a > .b > *:contains(\'href\')').addClass('zielona');
+                $('ol.a li:has(.b:has(:not([href])))').addClass('zielona');
             });
         });
     </script>
@@ -34,8 +34,17 @@
 
     <ol class="a">
         <li>Jeden</li>
-        <li class="b"><a>Dwa</a></li>
-        <li class="b"><a href="aa.html">Trzy</a></li>
+        <li>
+            <div class="b">
+                <div>Dwa</div>
+            </div>
+        </li>
+        <li>
+            <div class="b">
+                <a href="aa.html"></a>
+                Trzy
+            </div>
+        </li>
         <li>Cztery</li>
     </ol>
     <table>
